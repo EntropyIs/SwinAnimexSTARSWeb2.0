@@ -1,13 +1,11 @@
 <?php
 	/**
 	 * SwinAnime x STARS, Timekeeping Class, Used to access various clocks required for the formation of the club's website.
-	 * @version v0.1.1
+	 * @version v0.1.2
 	 * @author J.P. Galovic
 	 * @date MAR18
 	 */
-	class TimeKeeping {
-		private $time_zone = 'Australia/ATC';
-		
+	class TimeKeeping {		
 		/**
 		 * Gets Current Time of Webserver.
 		 * @return Current Time
@@ -15,7 +13,7 @@
 		 * @date 21/03/2018
 		 */
 		public static function now() {
-			date_default_timezone_set($time_zone);
+			date_default_timezone_set('Australia/ATC');
 			return date('Y-m-d H:i:s', time());
 		}
 		
@@ -26,7 +24,7 @@
 		 * @date 21/03/2018
 		 */
 		public static function delay() {
-			date_default_timezone_set($time_zone);
+			date_default_timezone_set('Australia/ATC');
 			return date('Y-m-d H:i:s', strtotime('-2 hours', time()));
 		}
 	}
