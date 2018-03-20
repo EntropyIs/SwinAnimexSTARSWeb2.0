@@ -6,5 +6,5 @@
 	 * @date MAR18
 	 */
 
-	include('code_gen/time_keeping.php');
+	require_once('code_gen/time_keeping.php');
 ?>
