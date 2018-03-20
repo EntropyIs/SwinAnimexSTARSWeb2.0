@@ -10,4 +10,7 @@
 
 	//Test Time Code! 21/03/2018
 	echo(TimeKeeping::now());
+
+	//Test Url Autoversion! 21/03/2018
+	echo(Process::auto_version('http://swinanime.net/index.php'));
 ?>
