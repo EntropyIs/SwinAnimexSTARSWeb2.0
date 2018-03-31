@@ -1,0 +1,75 @@
+/**
+ * SwinAnime x STARS, CSS Document, Main Grid, Controls Layout
+ * @version v0.1.1
+ * @author J.P. Galovic
+ * @date MAR18
+ */
+
+/**
+ * Grid Container Control
+ * Default layout for all Pages
+ */
+.page_container {
+	display: grid;
+	
+	grid-template-areas: 
+		'header header header header'
+		'facebook news news connect'
+		'facebook event event event'
+		'contact contact map map'
+		'footer footer footer footer'
+		;
+	
+	grid-gap: 10px;
+	
+	width: 100%;
+	height: 400px;
+	
+}
+
+
+
+
+/**
+ * Grid Sections
+ */
+
+#header {
+	grid-area: header;
+	background-color: #DD6466;
+}
+
+#news {
+	grid-area: news ;
+	background-color: #1580A0;
+}
+
+#facebook {
+	grid-area: facebook;
+	background-color: #2E842A;
+}
+
+#event {
+	grid-area: event;
+	background-color: #DEB179;
+}
+
+#connect {
+	grid-area: connect;
+	background-color: #65B5BF;
+}
+
+#contact {
+	grid-area: contact;
+	background-color: #B14BC3;
+}
+
+#map {
+	grid-area: map;
+	background-color: #B4BC27;
+}
+
+#footer {
+	grid-area: footer;
+	background-color: #448C60;
+}

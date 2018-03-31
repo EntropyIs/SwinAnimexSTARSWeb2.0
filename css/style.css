@@ -1,0 +1,31 @@
+/**
+ * SwinAnime x STARS Style
+ * @version v0.1.1
+ * @author J.P. Galovic
+ * @date MAR18
+ */
+
+/**
+ * Color Dart Pallets
+ */
+:root {
+	--color_dart_grey_0: #000000;
+	--color_dart_grey_1: #222222;
+	--color_dart_grey_2: #555555;
+	--color_dart_grey_3: #A6A6A6;
+	--color_dart_grey_4: #FFFFFF;
+	
+	--color_dart_red_0: #870000;
+	--color_dart_red_1: #BA0000;
+	--color_dart_red_2: #FF0000;
+	--color_dart_red_3: #FF4747;
+	--color_dart_red_4: #FF6767;
+}
+
+/**
+ * Font
+ */
+@font-face {
+	font-family: Nevis;
+	src:url(../font/nevis.ttf);
+}
