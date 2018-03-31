@@ -22,7 +22,7 @@
 		{
 			$db = new MySQLi($host, $user, $pass, 'swinan01_smart_web');
 			if($db->connect_errno > 0)
-				Error::send_error($db->connect_errno+1000,'Unable to connect to Website Database, ['.$DB->connect_errno.', '.$DB->connect_error.']');
+				ErrorReport::send_error($db->connect_errno+1000,'Unable to connect to Website Database, ['.$DB->connect_errno.', '.$DB->connect_error.']');
 		}
 		
 		/**
@@ -47,7 +47,7 @@
 		{
 			connect($db);
 			if(!($result->query($query)))
-				Error::send_error($db->errno+1000, $db->error.' '.$query);
+				ErrorReport::send_error($db->errno+1000, $db->error.' '.$query);
 			close($db);
 			
 			return($result);

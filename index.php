@@ -13,4 +13,7 @@
 
 	//Test Url Autoversion! 21/03/2018
 	echo(Process::auto_version('http://swinanime.net/index.php'));
+
+	//Test Error Reporting! 01/04/2018
+	ErrorReport::send_error(0, 'Test Error!');
 ?>
