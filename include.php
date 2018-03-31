@@ -7,6 +7,7 @@
 	 */
 
 	require_once('code_gen/time_keeping.php');
+	require_once('code_gen/error_report.php');
 	require_once('code_gen/process.php');
 	require_once('code_gen/sql_core.php');
 ?>
